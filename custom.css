@@ -1,0 +1,45 @@
+/*FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.navbarmenu {
+    width: 100%;
+    border: 1px solid black;
+    background-color: burlywood;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    writing-mode: horizontal-tb;
+}
+
+.ulcabecalho {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    color: #fcfcfc;
+}
+
+.listanavbar {
+    margin: 2 2px;
+    border: #e4e6e8;
+}
+
+li {
+    display: block;
+    color: #060404;
+    text-decoration: none;
+    padding: 9px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa do Google</title>
+    <style>
+        /* Estilo opcional para o contêiner do mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Mapa do Google</h1>
+    <!-- Substitua 'SUA_CHAVE_API' pela sua chave de API do Google Maps -->
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            // Coordenadas de latitude e longitude
+            var myLatLng = { lat: -23.5505, lng: -46.6333 };
+
+            // Crie um mapa com as opções de zoom e centro
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: myLatLng
+            });
+
+            // Adicione um marcador ao mapa
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Minha Localização'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&callback=initMap" async defer></script>
+</body>
+</html>
